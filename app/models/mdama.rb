@@ -1,0 +1,2 @@
+class Mdama < ApplicationRecord
+end

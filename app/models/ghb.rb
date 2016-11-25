@@ -1,0 +1,2 @@
+class Ghb < ApplicationRecord
+end

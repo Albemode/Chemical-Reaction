@@ -1,0 +1,2 @@
+class Mescaline < ApplicationRecord
+end

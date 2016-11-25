@@ -1,0 +1,2 @@
+class Mxe < ApplicationRecord
+end

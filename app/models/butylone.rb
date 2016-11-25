@@ -1,0 +1,2 @@
+class Butylone < ApplicationRecord
+end

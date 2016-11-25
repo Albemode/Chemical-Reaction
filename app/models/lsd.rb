@@ -1,0 +1,2 @@
+class Lsd < ApplicationRecord
+end

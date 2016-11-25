@@ -1,0 +1,2 @@
+class Cocaine < ApplicationRecord
+end

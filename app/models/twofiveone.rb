@@ -1,0 +1,2 @@
+class Twofiveone < ApplicationRecord
+end

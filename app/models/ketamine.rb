@@ -1,0 +1,2 @@
+class Ketamine < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class Popper < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class Amphetamine < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class Codeine < ApplicationRecord
+end
