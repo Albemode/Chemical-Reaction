@@ -69,6 +69,6 @@ class EmotionsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def emotion_params
-      params.fetch(:emotion, {})
+      params.require(:emotion).permit(:title, :description, :control, :report, :records, :event, :components, :classification, :theories, :genetics, :neurocircuitry, :prefrontal_cortex, :disciplinary_approaches, :history, :sociology, :computer_science)
     end
 end
