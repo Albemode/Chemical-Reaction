@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Surprises</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @surprises.each do |surprise| %>
+      <tr>
+        <td><%= link_to 'Show', surprise %></td>
+        <td><%= link_to 'Edit', edit_surprise_path(surprise) %></td>
+        <td><%= link_to 'Destroy', surprise, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Surprise', new_surprise_path %>

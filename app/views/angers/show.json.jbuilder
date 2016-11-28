@@ -1,0 +1,1 @@
+json.partial! "angers/anger", anger: @anger

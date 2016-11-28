@@ -1,0 +1,1 @@
+json.array! @confusions, partial: 'confusions/confusion', as: :confusion

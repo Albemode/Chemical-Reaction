@@ -1,0 +1,1 @@
+json.partial! "hopens/hopen", hopen: @hopen

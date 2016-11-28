@@ -1,0 +1,1 @@
+json.array! @hopens, partial: 'hopens/hopen', as: :hopen

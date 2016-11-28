@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Patiences</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @patiences.each do |patience| %>
+      <tr>
+        <td><%= link_to 'Show', patience %></td>
+        <td><%= link_to 'Edit', edit_patience_path(patience) %></td>
+        <td><%= link_to 'Destroy', patience, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Patience', new_patience_path %>

@@ -1,0 +1,1 @@
+json.partial! "respects/respect", respect: @respect

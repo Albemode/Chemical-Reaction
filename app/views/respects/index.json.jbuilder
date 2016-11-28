@@ -1,0 +1,1 @@
+json.array! @respects, partial: 'respects/respect', as: :respect
