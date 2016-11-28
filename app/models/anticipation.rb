@@ -1,0 +1,2 @@
+class Anticipation < ApplicationRecord
+end

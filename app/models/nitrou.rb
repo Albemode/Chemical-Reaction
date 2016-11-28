@@ -1,3 +1,3 @@
 class Nitrou < ApplicationRecord
-  belongs_to :drugs
+  belongs_to :drug
 end
