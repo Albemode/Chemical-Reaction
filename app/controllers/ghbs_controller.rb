@@ -1,0 +1,2 @@
+class GhbsController < ApplicationController
+end

@@ -1,0 +1,2 @@
+class KetamineController < ApplicationController
+end

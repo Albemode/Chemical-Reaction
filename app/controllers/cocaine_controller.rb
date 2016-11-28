@@ -1,0 +1,2 @@
+class CocaineController < ApplicationController
+end

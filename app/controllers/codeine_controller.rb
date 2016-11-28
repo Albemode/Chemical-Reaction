@@ -1,0 +1,2 @@
+class CodeineController < ApplicationController
+end

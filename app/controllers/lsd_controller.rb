@@ -1,0 +1,2 @@
+class LsdController < ApplicationController
+end

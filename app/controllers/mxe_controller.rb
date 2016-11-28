@@ -1,0 +1,2 @@
+class MxeController < ApplicationController
+end

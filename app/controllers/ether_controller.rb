@@ -1,0 +1,2 @@
+class EtherController < ApplicationController
+end

@@ -1,0 +1,2 @@
+class LoveController < ApplicationController
+end

@@ -1,0 +1,2 @@
+class PopperController < ApplicationController
+end

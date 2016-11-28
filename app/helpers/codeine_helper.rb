@@ -1,0 +1,2 @@
+module CodeineHelper
+end

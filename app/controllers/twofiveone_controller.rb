@@ -1,0 +1,2 @@
+class TwofiveoneController < ApplicationController
+end
