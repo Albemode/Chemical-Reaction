@@ -4,7 +4,7 @@ class CreateGhbs < ActiveRecord::Migration[5.0]
       t.string  :name
       t.string  :drug_name
       t.string  :title
-      t.string  :size_mb
+      t.integer  :size_mb
       t.string  :records
       t.string  :file
       t.string  :formula
@@ -13,7 +13,7 @@ class CreateGhbs < ActiveRecord::Migration[5.0]
       t.string  :clinical_data
       t.binary :cas_number
       t.string  :pharmacokinetic_data
-      t.interger  :identifiers
+      t.integer  :identifiers
       t.string  :neurotransmitter
       t.boolean :date_rape_drug
       t.boolean :medical_setting

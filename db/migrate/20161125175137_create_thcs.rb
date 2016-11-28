@@ -4,8 +4,7 @@ class CreateThcs < ActiveRecord::Migration[5.0]
       t.string  :name
       t.string  :drug_name
       t.string  :title
-      t.string  :title
-      t.string  :size_mb
+      t.integer  :size_mb
       t.string  :records
       t.string  :file
       t.string  :formula

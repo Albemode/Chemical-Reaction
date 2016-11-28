@@ -14,7 +14,7 @@ class CreateLsds < ActiveRecord::Migration[5.0]
       t.binary :cas_number
       t.string  :metabolism
       t.string  :pharmacokinetic_data
-      t.interger  :identifiers
+      t.integer  :identifiers
       t.boolean :side_effects
 
       t.timestamps

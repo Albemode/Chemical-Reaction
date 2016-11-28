@@ -4,7 +4,7 @@ class CreateDigusts < ActiveRecord::Migration[5.0]
       t.string  :name
       t.string  :emotion_name
       t.string  :title
-      t.string  :size_mb
+      t.integer  :size_mb
       t.string  :records
       t.string  :file
       t.string  :formula
@@ -17,6 +17,9 @@ class CreateDigusts < ActiveRecord::Migration[5.0]
       t.string  :affection
       t.boolean :drug
       t.boolean :side_effects
+      t.string   :causes
+      t.string   :psychology
+      t.string  :theory
 
       t.timestamps
     end
