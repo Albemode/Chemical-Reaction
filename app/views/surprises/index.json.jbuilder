@@ -1,0 +1,1 @@
+json.array! @surprises, partial: 'surprises/surprise', as: :surprise

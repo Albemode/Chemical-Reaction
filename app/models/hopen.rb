@@ -1,0 +1,2 @@
+class Hopen < ApplicationRecord
+end

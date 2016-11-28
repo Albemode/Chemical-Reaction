@@ -1,0 +1,1 @@
+json.partial! "saddnesses/saddness", saddness: @saddness

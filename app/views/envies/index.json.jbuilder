@@ -1,0 +1,1 @@
+json.array! @envies, partial: 'envies/envy', as: :envy

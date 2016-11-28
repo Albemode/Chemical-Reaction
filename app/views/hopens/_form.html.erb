@@ -1,0 +1,17 @@
+<%= form_for(hopen) do |f| %>
+  <% if hopen.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(hopen.errors.count, "error") %> prohibited this hopen from being saved:</h2>
+
+      <ul>
+      <% hopen.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

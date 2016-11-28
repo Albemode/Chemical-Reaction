@@ -1,0 +1,1 @@
+json.partial! "confusions/confusion", confusion: @confusion

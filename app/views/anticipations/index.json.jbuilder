@@ -1,0 +1,1 @@
+json.array! @anticipations, partial: 'anticipations/anticipation', as: :anticipation

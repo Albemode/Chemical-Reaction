@@ -1,0 +1,1 @@
+json.partial! "surprises/surprise", surprise: @surprise

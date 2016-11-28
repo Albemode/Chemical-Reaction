@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Angers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @angers.each do |anger| %>
+      <tr>
+        <td><%= link_to 'Show', anger %></td>
+        <td><%= link_to 'Edit', edit_anger_path(anger) %></td>
+        <td><%= link_to 'Destroy', anger, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Anger', new_anger_path %>

@@ -1,0 +1,17 @@
+<%= form_for(anticipation) do |f| %>
+  <% if anticipation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(anticipation.errors.count, "error") %> prohibited this anticipation from being saved:</h2>
+
+      <ul>
+      <% anticipation.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

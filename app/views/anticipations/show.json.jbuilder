@@ -1,0 +1,1 @@
+json.partial! "anticipations/anticipation", anticipation: @anticipation
