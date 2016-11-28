@@ -13,7 +13,7 @@ class CreateButylones < ActiveRecord::Migration[5.0]
       t.string  :clinical_data
       t.binary :cas_number
       t.string  :pharmacokinetic_data
-      t.interger  :identifiers
+      t.integer  :identifiers
       t.string  :entactogen
       t.string  :psychedelic
       t.boolean :side_effects
