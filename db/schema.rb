@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161128164031) do
+ActiveRecord::Schema.define(version: 20161128233210) do
 
   create_table "alcohols", force: :cascade do |t|
     t.string   "name"
@@ -676,6 +676,22 @@ ActiveRecord::Schema.define(version: 20161128164031) do
     t.string   "theory"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+  end
+
+  create_table "senses", force: :cascade do |t|
+    t.string   "physiological"
+    t.string   "organisms"
+    t.boolean  "perception"
+    t.boolean  "illusions"
+    t.boolean  "analogous_to_human_senses"
+    t.string   "nervous_system"
+    t.string   "traditional"
+    t.string   "non_traditional"
+    t.date     "time"
+    t.string   "culture"
+    t.string   "remote_sensing"
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
   end
 
   create_table "surprises", force: :cascade do |t|
