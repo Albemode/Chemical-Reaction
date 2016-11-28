@@ -2,6 +2,7 @@ class CreateLoves < ActiveRecord::Migration[5.0]
   def change
     create_table :loves do |t|
       t.string  :name
+      t.string  :drug_name
       t.string  :size_mb
       t.string  :records
       t.string  :file
@@ -14,7 +15,7 @@ class CreateLoves < ActiveRecord::Migration[5.0]
       t.boolean :attitudes
       t.string  :affection
       t.boolean :emotion
-      t.boolean :sideeffects
+      t.boolean :side_effects
 
       t.timestamps
     end

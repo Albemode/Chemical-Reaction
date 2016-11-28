@@ -1,0 +1,2 @@
+class PsilocybinController < ApplicationController
+end

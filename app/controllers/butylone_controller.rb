@@ -1,0 +1,2 @@
+class ButyloneController < ApplicationController
+end

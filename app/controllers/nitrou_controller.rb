@@ -1,0 +1,2 @@
+class NitrouController < ApplicationController
+end

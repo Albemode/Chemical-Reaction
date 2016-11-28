@@ -2,6 +2,7 @@ class CreateButylones < ActiveRecord::Migration[5.0]
   def change
     create_table :butylones do |t|
       t.string  :name
+      t.string  :drug_name
       t.string  :size_mb
       t.string  :records
       t.string  :file
@@ -14,7 +15,7 @@ class CreateButylones < ActiveRecord::Migration[5.0]
       t.interger  :identifiers
       t.string  :entactogen
       t.string  :psychedelic
-      t.boolean :sideeffects
+      t.boolean :side_effects
 
       t.timestamps
     end

@@ -2,6 +2,7 @@ class CreateGhbs < ActiveRecord::Migration[5.0]
   def change
     create_table :ghbs do |t|
       t.string  :name
+      t.string  :drug_name
       t.string  :size_mb
       t.string  :records
       t.string  :file
@@ -15,7 +16,7 @@ class CreateGhbs < ActiveRecord::Migration[5.0]
       t.string  :neurotransmitter
       t.boolean :date_rape_drug
       t.boolean :medical_setting
-      t.boolean :sideeffects
+      t.boolean :side_effects
 
       t.timestamps
     end

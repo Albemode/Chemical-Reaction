@@ -1,0 +1,2 @@
+class MdamaController < ApplicationController
+end

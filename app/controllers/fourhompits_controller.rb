@@ -1,0 +1,2 @@
+class FourhompitsController < ApplicationController
+end

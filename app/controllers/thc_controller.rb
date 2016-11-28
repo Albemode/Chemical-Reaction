@@ -1,0 +1,2 @@
+class ThcController < ApplicationController
+end

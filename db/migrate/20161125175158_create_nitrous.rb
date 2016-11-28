@@ -10,7 +10,7 @@ class CreateNitrous < ActiveRecord::Migration[5.0]
       t.string  :legal_status
       t.string  :clinical_data
       t.decimal :cas_number
-      t.boolean :sideeffects
+      t.boolean :side_effects
 
       t.timestamps
     end

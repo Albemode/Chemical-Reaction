@@ -1,0 +1,2 @@
+module NitrouHelper
+end
