@@ -1,3 +1,3 @@
 class Butylone < ApplicationRecord
-  belongs_to :drugs
+  belongs_to :drug
 end
