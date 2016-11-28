@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :senses
   resources :trusts
   resources :angers
   resources :anticipations
