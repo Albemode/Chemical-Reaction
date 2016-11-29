@@ -1,0 +1,1 @@
+json.partial! "butylones/butylone", butylone: @butylone

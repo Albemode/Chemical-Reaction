@@ -1,0 +1,17 @@
+<%= form_for(ether) do |f| %>
+  <% if ether.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(ether.errors.count, "error") %> prohibited this ether from being saved:</h2>
+
+      <ul>
+      <% ether.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

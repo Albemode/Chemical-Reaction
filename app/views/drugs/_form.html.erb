@@ -1,3 +1,4 @@
+<body class="secondpage"></body>
 <%= form_for(drug) do |f| %>
   <% if drug.errors.any? %>
     <div id="error_explanation">
@@ -13,10 +14,16 @@
 
   <div class="infolist">
 
-    <p>List</p>
-    <p>Effects</p>
-    <p>Uses</p>
-
+    <%= f.label :Brand_Name %>
+    <%= f.text_field :brand_name %><br>
+    <%= f.label :Description %>
+    <%= f.text_field :description %><br>
+    <%= f.label :Report %><br>
+    <%= f.text_field :report %><br>
+    <%= f.label :Control %><br>
+    <%= f.text_field :control %><br>
+    <%= f.label :Event %><br>
+    <%= f.text_field :event %><br>
   </div>
 
   <div class="actions">

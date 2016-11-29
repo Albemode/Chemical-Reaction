@@ -1,11 +1,15 @@
 class ButyloneController < ApplicationController
   def index
-    @butylone = Butylone.all
+    @butylones = Butylone.all
   end
 
   def show
   end
 
+
+  def new
+    @butylone = Butylone.new
+  end
   def create
   end
 
