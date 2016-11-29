@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :ethers
+  resources :amphetamines
   resources :senses
   resources :trusts
   resources :angers
@@ -15,5 +17,11 @@ Rails.application.routes.draw do
   resources :pains
   resources :emotions
   resources :drugs
+  resources :butylones
+  resources :alcohols
+
+
+
+  root 'drugs#index', as: "home_page"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

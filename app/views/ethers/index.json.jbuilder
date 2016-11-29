@@ -1,0 +1,1 @@
+json.array! @ethers, partial: 'ethers/ether', as: :ether

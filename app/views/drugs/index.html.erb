@@ -1,10 +1,28 @@
+<script src="https://api.fda.gov/drug/event.json?xoGgcwZHxyuCoySIaLq1ZYuhQ8TSJ1Uu5doHLbnv">
+
+</script>
+<body class="secondpage"></body>
 <p id="notice"><%= notice %></p>
 
-<h1>Drugs</h1>
+<h1>List of Drugs</h1>
 
-<table>
+<nav>
+  <li><%= link_to "Butylone", butylones_path %></li>
+  <li><%= link_to "Alcohol", alcohols_path %></li>
+  <li><%= link_to "Ether", ethers_path %></li>
+</nav>
+
+<table id="linkD">
   <thead>
     <tr>
+      <th>Brand Name</th>
+      <th>Description</th>
+      <th>Control</th>
+      <th>Report</th>
+      <th>Records</th>
+      <th>Event</th>
+      <th>Effects</th>
+      <th>Administration</th>
       <th colspan="3"></th>
     </tr>
   </thead>

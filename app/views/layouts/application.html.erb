@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CRApp</title>
+    <title>Chemical Reaction App</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,8 +9,16 @@
   </head>
 
   <body>
-    <nav>
-
+    <nav id="navbg">
+      <div class="logo">
+        <h1>Chemical Reaction</h1>
+      </div>
+      <ul>
+        <li><%= link_to "Emotion", emotions_path %></li>
+        <li><%= link_to "Drugs", drugs_path %></li>
+        <li><%= link_to "Senses", senses_path %></li>
+      </ul>
+      </div>
     </nav>
     <%= yield %>
   </body>

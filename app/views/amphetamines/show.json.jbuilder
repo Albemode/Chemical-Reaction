@@ -1,0 +1,1 @@
+json.partial! "amphetamines/amphetamine", amphetamine: @amphetamine

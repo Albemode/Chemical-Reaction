@@ -1,0 +1,2 @@
+module AmphetaminesHelper
+end

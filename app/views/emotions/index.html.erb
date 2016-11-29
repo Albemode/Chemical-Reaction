@@ -1,15 +1,27 @@
+<body class="homepage">
 <p id="notice"><%= notice %></p>
 
-<h1>Emotions</h1>
+<h1>List of Emotions</h1>
 
-<table>
+<table  id="linkE">
   <thead>
     <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Effects</th>
+      <th>Control</th>
+      <th>Report</th>
+      <th>Records</th>
+      <th>Event</th>
+      <th>Components</th>
+      <th>Theories</th>
+      <th>Genetics</th>
+      <th>Sociology</th>
       <th colspan="3"></th>
     </tr>
   </thead>
 
-  <tbody>
+  <tbody id >
     <% @emotions.each do |emotion| %>
       <tr>
         <td><%= link_to 'Show', emotion %></td>
@@ -23,3 +35,5 @@
 <br>
 
 <%= link_to 'New Emotion', new_emotion_path %>
+
+</body>

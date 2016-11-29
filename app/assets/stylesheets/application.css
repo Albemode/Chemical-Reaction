@@ -13,3 +13,85 @@
  *= require_tree .
  *= require_self
  */
+
+ body.homepage {
+   background:url('test1.jpg');
+   background-size: cover;
+ }
+
+ body.secondpage {
+   background:url('test2.jpg');
+   background-size: cover;
+ }
+
+ body.thirdpage {
+   background:url('test3.jpg');
+   background-size: cover;
+ }
+
+
+ #linkD {
+ 	background-color: rgba(0,0,0,0.6);
+ 	color: rgb(204, 255, 204);
+ 	width: 100%	;
+ 	padding: 40px;
+ 	margin-top: 0;
+ }
+
+ #linkE {
+ 	background-color: rgba(0,0,0,0.6);
+ 	color: rgb(204, 255, 204);
+ 	width: 100%	;
+ 	padding: 40px;
+ 	margin-top: 0;
+ }
+
+ #linkS {
+ 	background-color: rgba(0,0,0,0.6);
+ 	color: rgb(204, 255, 204);
+ 	width: 100%	;
+ 	padding: 40px;
+ 	margin-top: 0;
+ }
+
+ #linkD td, th {
+     border: 1px solid #ddd;
+     text-align: left;
+ }
+
+ #linkD  {
+     border-collapse: collapse;
+     width: 100%;
+ }
+
+ #linkD th, td {
+     padding: 15px;
+ }
+
+ #linkE td, th {
+     border: 1px solid #ddd;
+     text-align: left;
+ }
+
+ #linkE  {
+     border-collapse: collapse;
+     width: 100%;
+ }
+
+ #linkE th, td {
+     padding: 15px;
+ }
+
+ #linkS td, th {
+     border: 1px solid #ddd;
+     text-align: left;
+ }
+
+ #linkS  {
+     border-collapse: collapse;
+     width: 100%;
+ }
+
+ #linkS th, td {
+     padding: 15px;
+ }

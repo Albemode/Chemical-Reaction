@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Amphetamines</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @amphetamines.each do |amphetamine| %>
+      <tr>
+        <td><%= link_to 'Show', amphetamine %></td>
+        <td><%= link_to 'Edit', edit_amphetamine_path(amphetamine) %></td>
+        <td><%= link_to 'Destroy', amphetamine, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Amphetamine', new_amphetamine_path %>
