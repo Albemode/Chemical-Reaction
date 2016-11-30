@@ -1,0 +1,1 @@
+json.array! @fourhompits, partial: 'fourhompits/fourhompit', as: :fourhompit

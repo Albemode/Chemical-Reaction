@@ -1,0 +1,2 @@
+module NitrousHelper
+end

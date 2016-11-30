@@ -1,0 +1,17 @@
+<%= form_for(dmt) do |f| %>
+  <% if dmt.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(dmt.errors.count, "error") %> prohibited this dmt from being saved:</h2>
+
+      <ul>
+      <% dmt.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

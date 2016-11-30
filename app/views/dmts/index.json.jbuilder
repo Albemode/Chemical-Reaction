@@ -1,0 +1,1 @@
+json.array! @dmts, partial: 'dmts/dmt', as: :dmt

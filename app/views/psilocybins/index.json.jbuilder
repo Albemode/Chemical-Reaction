@@ -1,0 +1,1 @@
+json.array! @psilocybins, partial: 'psilocybins/psilocybin', as: :psilocybin

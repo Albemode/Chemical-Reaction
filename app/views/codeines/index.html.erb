@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Codeines</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @codeines.each do |codeine| %>
+      <tr>
+        <td><%= link_to 'Show', codeine %></td>
+        <td><%= link_to 'Edit', edit_codeine_path(codeine) %></td>
+        <td><%= link_to 'Destroy', codeine, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Codeine', new_codeine_path %>

@@ -1,0 +1,17 @@
+<%= form_for(twofiveone) do |f| %>
+  <% if twofiveone.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(twofiveone.errors.count, "error") %> prohibited this twofiveone from being saved:</h2>
+
+      <ul>
+      <% twofiveone.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

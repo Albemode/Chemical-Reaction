@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Dmts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @dmts.each do |dmt| %>
+      <tr>
+        <td><%= link_to 'Show', dmt %></td>
+        <td><%= link_to 'Edit', edit_dmt_path(dmt) %></td>
+        <td><%= link_to 'Destroy', dmt, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Dmt', new_dmt_path %>

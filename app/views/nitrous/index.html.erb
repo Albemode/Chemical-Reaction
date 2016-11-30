@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Nitrous</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @nitrous.each do |nitrou| %>
+      <tr>
+        <td><%= link_to 'Show', nitrou %></td>
+        <td><%= link_to 'Edit', edit_nitrou_path(nitrou) %></td>
+        <td><%= link_to 'Destroy', nitrou, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Nitrou', new_nitrou_path %>

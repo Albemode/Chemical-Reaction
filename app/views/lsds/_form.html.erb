@@ -1,0 +1,17 @@
+<%= form_for(lsd) do |f| %>
+  <% if lsd.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(lsd.errors.count, "error") %> prohibited this lsd from being saved:</h2>
+
+      <ul>
+      <% lsd.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,17 @@
+<%= form_for(ketamine) do |f| %>
+  <% if ketamine.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(ketamine.errors.count, "error") %> prohibited this ketamine from being saved:</h2>
+
+      <ul>
+      <% ketamine.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

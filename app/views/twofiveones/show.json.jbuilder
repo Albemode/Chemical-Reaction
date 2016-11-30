@@ -1,0 +1,1 @@
+json.partial! "twofiveones/twofiveone", twofiveone: @twofiveone

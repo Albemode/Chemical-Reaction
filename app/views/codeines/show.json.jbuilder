@@ -1,0 +1,1 @@
+json.partial! "codeines/codeine", codeine: @codeine

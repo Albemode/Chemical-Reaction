@@ -1,0 +1,17 @@
+<%= form_for(popper) do |f| %>
+  <% if popper.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(popper.errors.count, "error") %> prohibited this popper from being saved:</h2>
+
+      <ul>
+      <% popper.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

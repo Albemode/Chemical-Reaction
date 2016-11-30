@@ -1,0 +1,1 @@
+json.array! @mxes, partial: 'mxes/mx', as: :mx

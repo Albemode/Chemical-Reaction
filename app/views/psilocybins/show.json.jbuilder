@@ -1,0 +1,1 @@
+json.partial! "psilocybins/psilocybin", psilocybin: @psilocybin
