@@ -1,0 +1,17 @@
+<%= form_for(cocaine) do |f| %>
+  <% if cocaine.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(cocaine.errors.count, "error") %> prohibited this cocaine from being saved:</h2>
+
+      <ul>
+      <% cocaine.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

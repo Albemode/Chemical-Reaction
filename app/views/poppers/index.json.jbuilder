@@ -1,0 +1,1 @@
+json.array! @poppers, partial: 'poppers/popper', as: :popper

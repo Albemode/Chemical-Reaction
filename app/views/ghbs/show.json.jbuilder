@@ -1,0 +1,1 @@
+json.partial! "ghbs/ghb", ghb: @ghb

@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Mdamas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mdamas.each do |mdama| %>
+      <tr>
+        <td><%= link_to 'Show', mdama %></td>
+        <td><%= link_to 'Edit', edit_mdama_path(mdama) %></td>
+        <td><%= link_to 'Destroy', mdama, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mdama', new_mdama_path %>

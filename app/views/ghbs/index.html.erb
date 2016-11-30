@@ -1,0 +1,27 @@
+<body class="ghb">
+<p id="notice"><%= notice %></p>
+
+<h1>Ghbs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ghbs.each do |ghb| %>
+      <tr>
+        <td><%= link_to 'Show', ghb %></td>
+        <td><%= link_to 'Edit', edit_ghb_path(ghb) %></td>
+        <td><%= link_to 'Destroy', ghb, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ghb', new_ghb_path %>
+</body>

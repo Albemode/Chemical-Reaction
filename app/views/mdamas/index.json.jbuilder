@@ -1,0 +1,1 @@
+json.array! @mdamas, partial: 'mdamas/mdama', as: :mdama

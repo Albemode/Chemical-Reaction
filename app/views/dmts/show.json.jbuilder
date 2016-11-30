@@ -1,0 +1,1 @@
+json.partial! "dmts/dmt", dmt: @dmt

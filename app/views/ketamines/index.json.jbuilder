@@ -1,0 +1,1 @@
+json.array! @ketamines, partial: 'ketamines/ketamine', as: :ketamine

@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Ketamines</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ketamines.each do |ketamine| %>
+      <tr>
+        <td><%= link_to 'Show', ketamine %></td>
+        <td><%= link_to 'Edit', edit_ketamine_path(ketamine) %></td>
+        <td><%= link_to 'Destroy', ketamine, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ketamine', new_ketamine_path %>

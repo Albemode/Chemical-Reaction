@@ -1,0 +1,1 @@
+json.array! @nitrous, partial: 'nitrous/nitrou', as: :nitrou

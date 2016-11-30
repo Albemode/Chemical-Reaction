@@ -1,0 +1,1 @@
+json.array! @codeines, partial: 'codeines/codeine', as: :codeine

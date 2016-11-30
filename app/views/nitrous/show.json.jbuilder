@@ -1,0 +1,1 @@
+json.partial! "nitrous/nitrou", nitrou: @nitrou

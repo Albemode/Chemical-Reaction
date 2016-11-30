@@ -1,0 +1,1 @@
+json.array! @twofiveones, partial: 'twofiveones/twofiveone', as: :twofiveone

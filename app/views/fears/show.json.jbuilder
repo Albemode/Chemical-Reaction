@@ -1,0 +1,1 @@
+json.partial! "fears/fear", fear: @fear

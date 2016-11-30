@@ -1,0 +1,1 @@
+json.array! @ghbs, partial: 'ghbs/ghb', as: :ghb

@@ -1,0 +1,27 @@
+<body class="lsd">
+<p id="notice"><%= notice %></p>
+
+<h1>Lsds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lsds.each do |lsd| %>
+      <tr>
+        <td><%= link_to 'Show', lsd %></td>
+        <td><%= link_to 'Edit', edit_lsd_path(lsd) %></td>
+        <td><%= link_to 'Destroy', lsd, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Lsd', new_lsd_path %>
+</body>

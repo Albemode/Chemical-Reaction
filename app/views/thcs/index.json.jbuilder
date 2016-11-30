@@ -1,0 +1,1 @@
+json.array! @thcs, partial: 'thcs/thc', as: :thc

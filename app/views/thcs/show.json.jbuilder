@@ -1,0 +1,1 @@
+json.partial! "thcs/thc", thc: @thc

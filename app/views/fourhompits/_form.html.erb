@@ -1,0 +1,17 @@
+<%= form_for(fourhompit) do |f| %>
+  <% if fourhompit.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(fourhompit.errors.count, "error") %> prohibited this fourhompit from being saved:</h2>
+
+      <ul>
+      <% fourhompit.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

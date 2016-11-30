@@ -1,4 +1,20 @@
 Rails.application.routes.draw do
+  resources :fears
+  resources :loves
+  resources :twofiveones
+  resources :thcs
+  resources :psilocybins
+  resources :poppers
+  resources :nitrous
+  resources :mxes
+  resources :mdamas
+  resources :lsds
+  resources :ketamines
+  resources :ghbs
+  resources :fourhompits
+  resources :dmts
+  resources :codeines
+  resources :cocaines
   resources :ethers
   resources :amphetamines
   resources :senses

@@ -32,14 +32,16 @@
 
  #linkD {
  	background-color: rgba(0,0,0,0.6);
+  font-size: 10px;
  	color: rgb(204, 255, 204);
- 	width: 100%	;
- 	padding: 40px;
+ 	width: 20%;
+ 	padding: 30px;
  	margin-top: 0;
  }
 
  #linkE {
  	background-color: rgba(0,0,0,0.6);
+  font-size: 10px;
  	color: rgb(204, 255, 204);
  	width: 100%	;
  	padding: 40px;
@@ -48,6 +50,7 @@
 
  #linkS {
  	background-color: rgba(0,0,0,0.6);
+  font-size: 10px;
  	color: rgb(204, 255, 204);
  	width: 100%	;
  	padding: 40px;
@@ -95,3 +98,38 @@
  #linkS th, td {
      padding: 15px;
  }
+
+#SED {
+  position: absolute;
+  float: left;
+}
+
+.anger {
+  background-image: url('anger.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.fear {
+  background-image: url('fear.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.love {
+  background-image: url('love.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ghb {
+  background-image: url('GHB.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.lsd{
+  background-image: url('lsd.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}

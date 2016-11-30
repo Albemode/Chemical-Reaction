@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Psilocybins</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @psilocybins.each do |psilocybin| %>
+      <tr>
+        <td><%= link_to 'Show', psilocybin %></td>
+        <td><%= link_to 'Edit', edit_psilocybin_path(psilocybin) %></td>
+        <td><%= link_to 'Destroy', psilocybin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Psilocybin', new_psilocybin_path %>

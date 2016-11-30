@@ -1,0 +1,1 @@
+json.array! @fears, partial: 'fears/fear', as: :fear
