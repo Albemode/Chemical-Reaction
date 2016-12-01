@@ -81,21 +81,21 @@
      width: 100%;
  }
 
- #linkE th, td {
+#linkE th, td {
      padding: 15px;
  }
 
- #linkS td, th {
+#linkS td, th {
      border: 1px solid #ddd;
      text-align: left;
  }
 
- #linkS  {
+#linkS  {
      border-collapse: collapse;
      width: 100%;
  }
 
- #linkS th, td {
+#linkS th, td {
      padding: 15px;
  }
 
@@ -104,31 +104,42 @@
   float: left;
 }
 
-.anger {
+#navbg {
+    background-color: black;
+    height: 100px;
+}
+
+#logo {
+  width: 300px;
+  position: absolute;
+}
+
+
+body.anger {
   background-image: url('anger.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.fear {
+body.fear {
   background-image: url('fear.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 
 }
 
-.love {
+body.love {
   background-image: url('love.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.ghb {
+body.ghb {
   background-image: url('GHB.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
-.lsd{
+body.lsd{
   background-image: url('lsd.jpg');
   background-size: cover;
   background-repeat: no-repeat;

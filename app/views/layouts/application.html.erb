@@ -11,6 +11,9 @@
   </head>
 
   <body>
+    <nav id="navbg">
+      <div id="logo" ><%= image_tag("CR_logo3.jpg") %></div>
+
     <div id="navbarCollapse" class="collapse navbar-collapse">
 
         <ul class="nav navbar-nav">
@@ -62,15 +65,8 @@
 
 
 
-    <nav id="navbg">
-      <div class="logo">
-        <h1>Chemical Reaction</h1>
-      </div>
-      <ul>
-        <li><%= link_to "Emotion", emotions_path %></li>
-        <li><%= link_to "Drugs", drugs_path %></li>
-        <li><%= link_to "Senses", senses_path %></li>
-      </ul>
+
+
       </div>
     </nav>
     <%= yield %>
