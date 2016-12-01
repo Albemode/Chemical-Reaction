@@ -144,3 +144,12 @@ body.lsd{
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.info {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: rgb(21, 34, 56);
+	width: 400px;
+	float: left;
+  margin-left: 20px;
+	padding: 40px;
+}
