@@ -1,3 +1,3 @@
 class Fear < ApplicationRecord
-  belongs_to  :emotion
+  has_one  :emotion
 end

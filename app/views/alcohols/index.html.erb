@@ -4,7 +4,11 @@
 
 <h1>Alcohols</h1>
 
-<table>
+<div class="artwork">
+
+</div>
+
+<table class="linkD">
   <thead>
     <tr>
       <th>Name</th>
@@ -20,6 +24,12 @@
   <tbody>
     <% @alcohols.each do |alcohol| %>
       <tr>
+        <td><%= alcohol.name %></td>
+        <td><%= alcohol.title %></td>
+        <td><%= alcohol.formula %></td>
+        <td><%= alcohol.chemistry %></td>
+        <td><%= alcohol.side_effects %></td>
+        <td><%= alcohol.cas_number %></td>
         <td><%= link_to 'Show', alcohol %></td>
         <td><%= link_to 'Edit', edit_alcohol_path(alcohol) %></td>
         <td><%= link_to 'Destroy', alcohol, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -31,6 +41,14 @@
 <br>
 
 <%= link_to 'New Alcohol', new_alcohol_path %>
+
+<div class="ctinfo1">
+
+</div>
+
+<div class="ctinfo2">
+
+</div>
 
 <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 

@@ -69,6 +69,6 @@ class CocainesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def cocaine_params
-      params.fetch(:cocaine, {})
+      params.require(:cocaine).permit(:name, :drug_name, :title, :size_mb, :records, :file, :formula, :chemistry, :legal_status, :clinical_data, :cas_number, :side_effects)
     end
 end

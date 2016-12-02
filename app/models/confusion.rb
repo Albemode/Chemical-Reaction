@@ -1,3 +1,3 @@
 class Confusion < ApplicationRecord
-  belongs_to  :emotion
+  has_one :emotion
 end

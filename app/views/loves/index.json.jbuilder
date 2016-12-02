@@ -1,1 +1,1 @@
-json.array! @loves, partial: 'loves/lofe', as: :lofe
+json.array! @loves, partial: 'loves/love', as: :love

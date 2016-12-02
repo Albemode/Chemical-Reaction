@@ -1,10 +1,10 @@
-<%= form_for(lofe) do |f| %>
-  <% if lofe.errors.any? %>
+<%= form_for(love) do |f| %>
+  <% if love.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(lofe.errors.count, "error") %> prohibited this lofe from being saved:</h2>
+      <h2><%= pluralize(love.errors.count, "error") %> prohibited this love from being saved:</h2>
 
       <ul>
-      <% lofe.errors.full_messages.each do |message| %>
+      <% love.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>
@@ -22,12 +22,10 @@
     <%= f.text_field :formula %><br>
     <%= f.label :Chemistry %><br>
     <%= f.text_field :chemistry %><br>
-    <%= f.label :Cause %><br>
-    <%= f.text_field :causes %><br>
+
     <%= f.label :Affection %><br>
     <%= f.text_field :affection %><br>
-    <%= f.label :Psychology %><br>
-    <%= f.text_field :psychology %><br>
+    
     <%= f.label :Side_Effects %><br>
     <%= f.text_field :side_effects %><br>
   </div>

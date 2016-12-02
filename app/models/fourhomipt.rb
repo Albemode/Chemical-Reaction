@@ -1,3 +1,3 @@
 class Fourhomipt < ApplicationRecord
-  belongs_to :drug
+  has_one :drug
 end

@@ -1,6 +1,6 @@
 class FourhompitsController < ApplicationController
   def index
-    @fourhompits = Fourhomipts.all
+    @fourhompits = Fourhomipt.all
   end
 
   # GET /alcohols/1
@@ -10,7 +10,7 @@ class FourhompitsController < ApplicationController
 
   # GET /alcohols/new
   def new
-    @fourhompits = Fourhomipts.new
+    @fourhompit = Fourhomipt.new
   end
 
   # GET /alcohols/1/edit
@@ -20,15 +20,15 @@ class FourhompitsController < ApplicationController
   # POST /alcohols
   # POST /alcohols.json
   def create
-    @fourhompits = Fourhomipts.new(alcohol_params)
+    @fourhompit = Fourhomipt.new(alcohol_params)
 
     respond_to do |format|
-      if @fourhompits.save
-        format.html { redirect_to @fourhompits, notice: 'Alcohol was successfully created.' }
-        format.json { render :show, status: :created, location: @fourhompits }
+      if @fourhompit.save
+        format.html { redirect_to @fourhompit, notice: 'Alcohol was successfully created.' }
+        format.json { render :show, status: :created, location: @fourhompit }
       else
         format.html { render :new }
-        format.json { render json: @fourhompits.errors, status: :unprocessable_entity }
+        format.json { render json: @fourhompit.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -37,12 +37,12 @@ class FourhompitsController < ApplicationController
   # PATCH/PUT /alcohols/1.json
   def update
     respond_to do |format|
-      if @fourhompits.update(alcohol_params)
-        format.html { redirect_to @fourhompits, notice: 'Alcohol was successfully updated.' }
-        format.json { render :show, status: :ok, location: @fourhompits }
+      if @fourhompit.update(alcohol_params)
+        format.html { redirect_to @fourhompit, notice: 'Alcohol was successfully updated.' }
+        format.json { render :show, status: :ok, location: @fourhompit }
       else
         format.html { render :edit }
-        format.json { render json: @fourhompits.errors, status: :unprocessable_entity }
+        format.json { render json: @fourhompit.errors, status: :unprocessable_entity }
       end
     end
   end

@@ -69,6 +69,6 @@ class PsilocybinsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def psilocybin_params
-      params.fetch(:psilocybin, {})
+      params.require(:psilocybin).permit(:name, :drug_name, :title, :size_mb, :records, :file, :formula, :chemistry, :legal_status, :clinical_data, :cas_number, :side_effects)
     end
 end

@@ -1,17 +1,17 @@
 class Emotion < ApplicationRecord
-  has_many  :fear
-  has_many  :anger
-  has_many  :saddness
-  has_many  :joy
-  has_many  :digust
-  has_many  :trust
-  has_many  :love
-  has_many  :anticipation
-  has_many  :surprise
-  has_many  :confusion
-  has_many  :hope
-  has_many  :respect
-  has_many  :envy
-  has_many  :patience
-  has_many  :pain
+  has_many  :fears
+  has_many  :angers
+  has_many  :saddnesses
+  has_many  :joys
+  has_many  :digusts
+  has_many  :trusts
+  has_many  :loves
+  has_many  :anticipations
+  has_many  :surprises
+  has_many  :confusions
+  has_many  :hopes
+  has_many  :respects
+  has_many  :envies
+  has_many  :patiences
+  has_many  :pains
 end

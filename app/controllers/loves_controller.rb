@@ -1,5 +1,5 @@
 class LovesController < ApplicationController
-  before_action :set_lofe, only: [:show, :edit, :update, :destroy]
+  before_action :set_love, only: [:show, :edit, :update, :destroy]
 
   # GET /loves
   # GET /loves.json
@@ -14,7 +14,7 @@ class LovesController < ApplicationController
 
   # GET /loves/new
   def new
-    @lofe = Love.new
+    @love = Love.new
   end
 
   # GET /loves/1/edit
@@ -24,15 +24,15 @@ class LovesController < ApplicationController
   # POST /loves
   # POST /loves.json
   def create
-    @lofe = Love.new(lofe_params)
+    @love = Love.new(love_params)
 
     respond_to do |format|
-      if @lofe.save
-        format.html { redirect_to @lofe, notice: 'Love was successfully created.' }
-        format.json { render :show, status: :created, location: @lofe }
+      if @love.save
+        format.html { redirect_to @love, notice: 'Love was successfully created.' }
+        format.json { render :show, status: :created, location: @love }
       else
         format.html { render :new }
-        format.json { render json: @lofe.errors, status: :unprocessable_entity }
+        format.json { render json: @love.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -41,12 +41,12 @@ class LovesController < ApplicationController
   # PATCH/PUT /loves/1.json
   def update
     respond_to do |format|
-      if @lofe.update(lofe_params)
-        format.html { redirect_to @lofe, notice: 'Love was successfully updated.' }
-        format.json { render :show, status: :ok, location: @lofe }
+      if @love.update(love_params)
+        format.html { redirect_to @love, notice: 'Love was successfully updated.' }
+        format.json { render :show, status: :ok, location: @love }
       else
         format.html { render :edit }
-        format.json { render json: @lofe.errors, status: :unprocessable_entity }
+        format.json { render json: @love.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -54,7 +54,7 @@ class LovesController < ApplicationController
   # DELETE /loves/1
   # DELETE /loves/1.json
   def destroy
-    @lofe.destroy
+    @love.destroy
     respond_to do |format|
       format.html { redirect_to loves_url, notice: 'Love was successfully destroyed.' }
       format.json { head :no_content }
@@ -63,12 +63,12 @@ class LovesController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_lofe
-      @lofe = Love.find(params[:id])
+    def set_love
+      @love = Love.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
-    def lofe_params
-      params.fetch(:lofe, {})
+    def love_params
+      params.require(:love).permit(:name, :drug_name, :title, :size_mb, :records, :file, :formula, :chemistry, :legal_status, :clinical_data, :cas_number, :states, :attitudes, :affection, :emotion, :side_effects)
     end
 end
