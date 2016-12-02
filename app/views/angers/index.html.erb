@@ -4,11 +4,11 @@
 
 <h1>Anger</h1>
 
-<div class="artwork">
+<div class="artworkanger">
 
 </div>
 
-<table>
+<table class="linkD">
   <thead>
     <tr>
       <th>title</th>
@@ -25,6 +25,13 @@
   <tbody>
     <% @angers.each do |anger| %>
       <tr>
+        <td><%= anger.title %></td>
+        <td><%= anger.affection %></td>
+        <td><%= anger.passive %></td>
+        <td><%= anger.aggressive %></td>
+        <td><%= anger.expression %></td>
+        <td><%= anger.theory %></td>
+        <td><%= anger.psychology %></td>
         <td><%= link_to 'Show', anger %></td>
         <td><%= link_to 'Edit', edit_anger_path(anger) %></td>
         <td><%= link_to 'Destroy', anger, method: :delete, data: { confirm: 'Are you sure?' } %></td>
