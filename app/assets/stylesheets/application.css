@@ -123,23 +123,30 @@
  margin-top: 0;
 }
 
-body.anger {
+.artworkanger {
   background-image: url('anger.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  margin-left: 180px;
+  width: 900px;
+  height: 500px;
 }
 
-body.fear {
-  background-image: url('fear.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-
-}
-
-body.love {
+.artworklove {
   background-image: url('love.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  margin-left: 180px;
+  width: 900px;
+  height: 500px;
+}
+.artworkfear {
+  background-image: url('fear.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 180px;
+  width: 900px;
+  height: 500px;
 }
 
 body.ghb {
@@ -162,13 +169,13 @@ body.lsd{
 	padding: 40px;
 }
 
-.artwork {
+/*.artwork {
   position: relative;
   left: 20px:
   width: 900px;
   height: 400px;
   background-color: red;
-}
+}*/
 
 .ctinfo1 {
   background: yellow;
