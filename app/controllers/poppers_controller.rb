@@ -69,6 +69,6 @@ class PoppersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def popper_params
-      params.fetch(:popper, {})
+      params.require(:popper).permit(:name, :drug_name, :title, :size_mb, :records, :file, :formula, :chemistry, :legal_status, :clinical_data, :cas_number, :side_effects :phiscal_data, :duration)
     end
 end
