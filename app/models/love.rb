@@ -1,3 +1,3 @@
 class Love < ApplicationRecord
-  belongs_to :emotion
+  has_one :emotion
 end

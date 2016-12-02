@@ -1,3 +1,3 @@
 class Alcohol < ApplicationRecord
-  belongs_to :drug
+  has_many :drug
 end

@@ -69,6 +69,6 @@ class LsdsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def lsd_params
-      params.fetch(:lsd, {})
+      params.require(:lsd).permit(:name, :drug_name, :title, :size_mb, :records, :file, :formula, :chemistry, :legal_status, :clinical_data, :cas_number, :metabolism, :pharmacokinetic_data, :identifiers, :side_effects)
     end
 end

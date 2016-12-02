@@ -2,9 +2,25 @@
 
 <h1>Amphetamines</h1>
 
-<table>
+<div class="artwork">
+
+</div>
+
+<table class="linkD">
   <thead>
     <tr>
+      <th>Name</th>
+      <th>Drugname</th>
+      <th>Title</th>
+      <th>Size_mb</th>
+      <th>Records</th>
+      <th>File</th>
+      <th>Formula</th>
+      <th>Chemistry</th>
+      <th>Legal Status</th>
+      <th>Clinical Data</th>
+      <th>Cas Number</th>
+      <th>Side Effects</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -12,6 +28,17 @@
   <tbody>
     <% @amphetamines.each do |amphetamine| %>
       <tr>
+        <td><%= amphetamine.name %></td>
+        <td><%= amphetamine.drug_name %></td>
+        <td><%= amphetamine.title %></td>
+        <td><%= amphetamine.size_mb %></td>
+        <td><%= amphetamine.records %></td>
+        <td><%= amphetamine.file %></td>
+        <td><%= amphetamine.formula %></td>
+        <td><%= amphetamine.chemistry%></td>
+        <td><%= amphetamine.legal_status%></td>
+        <td><%= amphetamine.cas_number %></td>
+        <td><%= amphetamine.side_effects %></td>
         <td><%= link_to 'Show', amphetamine %></td>
         <td><%= link_to 'Edit', edit_amphetamine_path(amphetamine) %></td>
         <td><%= link_to 'Destroy', amphetamine, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -23,3 +50,78 @@
 <br>
 
 <%= link_to 'New Amphetamine', new_amphetamine_path %>
+
+
+<div class="ctinfo1">
+
+</div>
+
+<div class="ctinfo2">
+
+</div>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+
+<script type="text/javascript">
+$(function () {
+  $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=usdeur.json&callback=?', function (data) {
+
+      Highcharts.chart('container', {
+          chart: {
+              zoomType: 'x'
+          },
+          title: {
+              text: 'Duration rate'
+          },
+          subtitle: {
+              text: document.ontouchstart === undefined ?
+                      'Click and drag in the plot area to zoom in' : 'Pinch the chart to zoom in'
+          },
+          xAxis: {
+              type: 'Timer'
+          },
+          yAxis: {
+              title: {
+                  text: 'Dose Level'
+              }
+          },
+          legend: {
+              enabled: false
+          },
+          plotOptions: {
+              area: {
+                  fillColor: {
+                      linearGradient: {
+                          x1: 1,
+                          y1: 2,
+                          x2: 1,
+                          y2: 1
+                      },
+                      stops: [
+                          [0, Highcharts.getOptions().colors[0]],
+                          [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+                      ]
+                  },
+                  marker: {
+                      radius: 5
+                  },
+                  lineWidth: 1,
+                  states: {
+                      hover: {
+                          lineWidth: 1
+                      }
+                  },
+                  threshold: null
+              }
+          },
+
+          series: [{
+              type: 'area',
+              name: 'Low to High',
+              data: data
+          }]
+      });
+  });
+});
+</script>

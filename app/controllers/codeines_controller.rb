@@ -69,6 +69,6 @@ class CodeinesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def codeine_params
-      params.fetch(:codeine, {})
+      params.require(:codeine).permit(:name, :drug_name, :title, :size_mb, :records, :file, :formula, :chemistry, :legal_status, :clinical_data, :cas_number, :pain, :cough_medicine, :side_effects)
     end
 end
