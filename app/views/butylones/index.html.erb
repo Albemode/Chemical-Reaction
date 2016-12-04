@@ -11,6 +11,12 @@
 <table>
   <thead>
     <tr>
+      <th>Title</th>
+      <th>Size mb</th>
+      <th>Formula</th>
+      <th>Chemistry</th>
+      <th>Legal Status</th>
+      <th>Cas Number</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -18,6 +24,12 @@
   <tbody>
     <% @butylones.each do |butylone| %>
       <tr>
+        <td><%= butylone.title %></td>
+        <td><%= butylone.size_mb %></td>
+        <td><%= butylone.formula %></td>
+        <td><%= butylone.chemistry %></td>
+        <td><%= butylone.legal_status %></td>
+        <td><%= butylone.cas_number %></td>
         <td><%= link_to 'Show', butylone %></td>
         <td><%= link_to 'Edit', edit_butylone_path(butylone) %></td>
         <td><%= link_to 'Destroy', butylone, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -14,18 +14,8 @@
  *= require_self
  */
 
- body.homepage {
-   background:url('test1.jpg');
-   background-size: cover;
- }
-
- body.secondpage {
-   background:url('test2.jpg');
-   background-size: cover;
- }
-
- body.thirdpage {
-   background:url('test3.jpg');
+ body {
+   background:url('7.jpg');
    background-size: cover;
  }
 
@@ -105,13 +95,31 @@
 }
 
 #navbg {
-    background-color: black;
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+    background:url('CREbg3.jpg');
+    background-size: cover;
     width: 300;
-    height: 100px;
+    height: 152px;
 }
 
 #logo {
-  width: 100px;
+  width: 280px;
+  left: 500px;
+  position: absolute;
+}
+
+.nav.navbar-nav {
+  font-size: 20px;
+  background-color: rgba(200, 200, 200, 0.5);a;
+  margin-top: 20px;
+}
+
+.dropdown {
+  color: white;
+}
+
+.dropdown-toggle {
+  color: white;
 }
 
 .linkD {
@@ -127,7 +135,6 @@
   background-image: url('anger.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  margin-left: 180px;
   width: 900px;
   height: 500px;
 }
