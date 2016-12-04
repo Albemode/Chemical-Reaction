@@ -9,6 +9,12 @@
 <table>
   <thead>
     <tr>
+      <th>Title</th>
+      <th>Size mb</th>
+      <th>Formula</th>
+      <th>Chemistry</th>
+      <th>Legal Status</th>
+      <th>Cas Number</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,6 +22,12 @@
   <tbody>
     <% @cocaines.each do |cocaine| %>
       <tr>
+        <td> cocaines.title </td>
+        <td> cocaines.size_mb </td>
+        <td> cocaines.formula </td>
+        <td> cocaines.chemistry </td>
+        <td> cocaines.legal_status </td>
+        <td> cocaines.cas_number </td>
         <td><%= link_to 'Show', cocaine %></td>
         <td><%= link_to 'Edit', edit_cocaine_path(cocaine) %></td>
         <td><%= link_to 'Destroy', cocaine, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -46,6 +58,13 @@ $(function () {
 
       Highcharts.chart('container', {
           chart: {
+            backgroundColor: {
+               linearGradient: { x1: 0, y1: 0, x2: 1, y2: 1 },
+               stops: [
+                  [0, '#2a2a2b'],
+                  [1, '#3e3e40']
+               ]
+            },
               zoomType: 'x'
           },
           title: {
