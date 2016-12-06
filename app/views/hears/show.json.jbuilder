@@ -1,0 +1,1 @@
+json.partial! "hears/hear", hear: @hear

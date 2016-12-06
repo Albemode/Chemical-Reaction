@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161201225148) do
+ActiveRecord::Schema.define(version: 20161206222431) do
 
   create_table "alcohols", force: :cascade do |t|
     t.string   "name"
@@ -370,6 +370,16 @@ ActiveRecord::Schema.define(version: 20161201225148) do
     t.datetime "updated_at",           null: false
   end
 
+  create_table "hears", force: :cascade do |t|
+    t.string   "subtype"
+    t.string   "duration"
+    t.string   "detection"
+    t.string   "effect"
+    t.string   "nervous_system"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
   create_table "hopes", force: :cascade do |t|
     t.string   "name"
     t.string   "emotion_name"
@@ -696,6 +706,26 @@ ActiveRecord::Schema.define(version: 20161201225148) do
     t.datetime "updated_at",                null: false
   end
 
+  create_table "sights", force: :cascade do |t|
+    t.string   "subtype"
+    t.string   "duration"
+    t.string   "detection"
+    t.string   "effect"
+    t.string   "nervous_system"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
+  create_table "smells", force: :cascade do |t|
+    t.string   "subtype"
+    t.string   "duration"
+    t.string   "detection"
+    t.string   "effect"
+    t.string   "nervous_system"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
   create_table "surprises", force: :cascade do |t|
     t.string   "name"
     t.string   "emotion_name"
@@ -723,6 +753,16 @@ ActiveRecord::Schema.define(version: 20161201225148) do
     t.datetime "updated_at",              null: false
   end
 
+  create_table "tastes", force: :cascade do |t|
+    t.string   "subtype"
+    t.string   "duration"
+    t.string   "detection"
+    t.string   "effect"
+    t.string   "nervous_system"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
   create_table "thcs", force: :cascade do |t|
     t.string   "name"
     t.string   "drug_name"
@@ -738,6 +778,16 @@ ActiveRecord::Schema.define(version: 20161201225148) do
     t.boolean  "side_effects"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+  end
+
+  create_table "touches", force: :cascade do |t|
+    t.string   "subtype"
+    t.string   "duration"
+    t.string   "detection"
+    t.string   "effect"
+    t.string   "nervous_system"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
   end
 
   create_table "trusts", force: :cascade do |t|

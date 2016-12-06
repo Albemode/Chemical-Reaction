@@ -10,11 +10,6 @@
   <thead>
     <tr>
       <th>Name</th>
-      <th>Drugname</th>
-      <th>Title</th>
-      <th>Size_mb</th>
-      <th>Records</th>
-      <th>File</th>
       <th>Formula</th>
       <th>Chemistry</th>
       <th>Legal Status</th>
@@ -29,10 +24,6 @@
     <% @amphetamines.each do |amphetamine| %>
       <tr>
         <td><%= amphetamine.name %></td>
-        <td><%= amphetamine.drug_name %></td>
-        <td><%= amphetamine.title %></td>
-        <td><%= amphetamine.size_mb %></td>
-        <td><%= amphetamine.records %></td>
         <td><%= amphetamine.file %></td>
         <td><%= amphetamine.formula %></td>
         <td><%= amphetamine.chemistry%></td>

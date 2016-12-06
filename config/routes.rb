@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :tastes
+  resources :touches
+  resources :smells
+  resources :sights
+  resources :hears
   resources :fears
   resources :loves
   resources :twofiveones
