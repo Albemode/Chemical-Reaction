@@ -1,0 +1,1 @@
+json.array! @hears, partial: 'hears/hear', as: :hear

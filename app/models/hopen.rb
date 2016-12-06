@@ -1,2 +1,0 @@
-class Hopen < ApplicationRecord
-end

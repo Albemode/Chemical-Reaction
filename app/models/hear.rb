@@ -1,0 +1,2 @@
+class Hear < ApplicationRecord
+end

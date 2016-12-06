@@ -1,0 +1,1 @@
+json.partial! "smells/smell", smell: @smell

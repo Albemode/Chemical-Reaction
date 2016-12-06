@@ -1,0 +1,17 @@
+<%= form_for(hear) do |f| %>
+  <% if hear.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(hear.errors.count, "error") %> prohibited this hear from being saved:</h2>
+
+      <ul>
+      <% hear.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
