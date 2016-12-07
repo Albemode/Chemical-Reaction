@@ -5,6 +5,11 @@
 <table>
   <thead>
     <tr>
+      <th>Subtype</th>
+      <th>Duration</th>
+      <th>Detection</th>
+      <th>Effect</th>
+      <th>Nervous system</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -12,6 +17,11 @@
   <tbody>
     <% @tastes.each do |taste| %>
       <tr>
+        <td><%= taste.subtype %></td>
+        <td><%= taste.duration %></td>
+        <td><%= taste.detection %></td>
+        <td><%= taste.effect %></td>
+        <td><%= taste.nervous_system %></td>
         <td><%= link_to 'Show', taste %></td>
         <td><%= link_to 'Edit', edit_taste_path(taste) %></td>
         <td><%= link_to 'Destroy', taste, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -22,4 +32,4 @@
 
 <br>
 
-<%= link_to 'New Taste', new_taste_path %>
+<%= link_to 'Add Taste data', new_taste_path %>

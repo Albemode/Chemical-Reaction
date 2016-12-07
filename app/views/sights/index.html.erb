@@ -5,6 +5,11 @@
 <table>
   <thead>
     <tr>
+      <th>Subtype</th>
+      <th>Duration</th>
+      <th>Detection</th>
+      <th>Effect</th>
+      <th>Nervous system</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -12,6 +17,11 @@
   <tbody>
     <% @sights.each do |sight| %>
       <tr>
+        <td><%= sight.subtype %></td>
+        <td><%= sight.duration %></td>
+        <td><%= sight.detection %></td>
+        <td><%= sight.effect %></td>
+        <td><%= sight.nervous_system %></td>
         <td><%= link_to 'Show', sight %></td>
         <td><%= link_to 'Edit', edit_sight_path(sight) %></td>
         <td><%= link_to 'Destroy', sight, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -22,4 +32,4 @@
 
 <br>
 
-<%= link_to 'New Sight', new_sight_path %>
+<%= link_to 'Add Sight data', new_sight_path %>

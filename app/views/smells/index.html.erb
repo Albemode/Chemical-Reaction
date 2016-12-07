@@ -5,6 +5,11 @@
 <table>
   <thead>
     <tr>
+      <th>Subtype</th>
+      <th>Duration</th>
+      <th>Detection</th>
+      <th>Effect</th>
+      <th>Nervous system</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -12,6 +17,11 @@
   <tbody>
     <% @smells.each do |smell| %>
       <tr>
+        <td><%= smell.subtype %></td>
+        <td><%= smell.duration %></td>
+        <td><%= smell.detection %></td>
+        <td><%= smell.effect %></td>
+        <td><%= smell.nervous_system %></td>
         <td><%= link_to 'Show', smell %></td>
         <td><%= link_to 'Edit', edit_smell_path(smell) %></td>
         <td><%= link_to 'Destroy', smell, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -22,4 +32,4 @@
 
 <br>
 
-<%= link_to 'New Smell', new_smell_path %>
+<%= link_to 'Add Smell data', new_smell_path %>

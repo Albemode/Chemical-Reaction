@@ -5,6 +5,11 @@
 <table>
   <thead>
     <tr>
+      <th>Subtype</th>
+      <th>Duration</th>
+      <th>Detection</th>
+      <th>Effect</th>
+      <th>Nervous system</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -12,6 +17,11 @@
   <tbody>
     <% @touches.each do |touch| %>
       <tr>
+        <td><%= touch.subtype %></td>
+        <td><%= touch.duration %></td>
+        <td><%= touch.detection %></td>
+        <td><%= touch.effect %></td>
+        <td><%= touch.nervous_system %></td>
         <td><%= link_to 'Show', touch %></td>
         <td><%= link_to 'Edit', edit_touch_path(touch) %></td>
         <td><%= link_to 'Destroy', touch, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -22,4 +32,4 @@
 
 <br>
 
-<%= link_to 'New Touch', new_touch_path %>
+<%= link_to 'Add Touch data', new_touch_path %>
